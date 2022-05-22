@@ -1,0 +1,80 @@
+.itemsTitle{
+    font-weight: bold;
+    font-size: 16px;
+    color: #4F4F4F;
+    margin: 0;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.checkBox{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.itemTitle{
+    font-weight: 400;
+    font-size: 14px;
+    color: #4F4F4F;
+    margin: 0;
+}
+
+.filterItemsDevider{
+    margin-bottom: 26px;
+}
+
+.filterModal{
+    
+}
+
+.topTriangle{
+    position: fixed;
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    left: 20px;
+    top: 172px;
+    z-index: -1;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+}
+
+.menuItems{
+    position: fixed;
+    width: 220px;
+    height: 429px;
+    background-color: #fff;
+    border-radius: 4px;
+    top: 175px;
+    left: 10px;
+    z-index: 1;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+    padding: 16px 17px;
+}
+
+.helpTriangle{
+    position: fixed;
+    background-color: #fff;
+    width: 16px;
+    height: 16px;
+    transform: rotate(45deg);
+    left: 23px;
+    top: 172px;
+    z-index: -1;
+}
+
+.itemsWrapper{
+    width: 100%;
+    text-align: left;
+    padding: 0;
+}
+
+.hidden{
+    display: none;
+}

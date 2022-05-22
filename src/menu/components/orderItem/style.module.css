@@ -1,0 +1,78 @@
+.dishOrderWrapper{
+    height: 116px;
+    display: flex;
+    margin-top: 24px;
+}
+
+.dishOrderImage{
+    height: 100%;
+    width: 100px;
+}
+
+.disabledImage {
+    opacity: 0.3;
+}
+
+.orderDescriptionWrapper{
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 116px;
+    text-align: left;
+}
+
+.orderTextWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.orderName{
+    width: 220px;
+    margin: 0;
+    color: #1F2026;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+}
+
+.orderOption{
+    color: #1F2026;
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0;
+    margin-top: 8px;
+}
+
+.optionWrapper{
+    width: 220px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.orderPrice{
+    font-weight: 600;
+    font-size: 16px;
+    color: #1F2026;
+    margin: 0;
+}
+
+.oldPrice{
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+    color: #1F2026;
+    margin-right: 8px;
+}
+
+.disabled {
+    color: #7C7D88;
+    text-decoration: line-through;
+}
+
+.movedLeft{
+    margin-left: 30px;
+}

@@ -1,0 +1,17 @@
+.dateWrapper{
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+}
+
+.date, .time{
+    margin: 0;
+    font-weight: 400;
+    font-size: 12px;
+    color: #7C7D88;
+}
+
+.date{
+    margin-right: 8px;
+}
+

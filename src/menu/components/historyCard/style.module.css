@@ -1,0 +1,200 @@
+.dishOrderWrapper{
+    height: 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 24px;
+    background-color: #F1F1F1;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.dishOrderImage{
+    height: 100%;
+    width: 100px;
+}
+
+.dishCardWrapper{
+    width: 60%;
+}
+
+.orderDescriptionWrapper{
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 116px;
+    text-align: left;
+}
+
+.orderTextWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.orderName{
+    width: 220px;
+    margin: 0;
+    color: #1F2026;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+}
+
+.orderOption{
+    color: #1F2026;
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0;
+    margin-top: 8px;
+}
+
+.optionWrapper{
+    width: 220px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+
+.orderPrice{
+    font-weight: 600;
+    font-size: 16px;
+    color: #1F2026;
+    margin: 0;
+    margin-left: 30px;
+}
+
+.gotDown{
+    height: 0vh;
+    bottom: -32px;
+    transition: height 0.5s;
+}
+
+.cardContentWrapper{
+    width: 100%;
+    height: 100%;
+    margin-top: 16px;
+    text-align: start;
+}
+
+.dishCardLineWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.dishCardLine{
+    position: relative;
+    width: 32px;
+    height: 4px;
+    background-color: #E8E8E8;
+    border-radius: 100px;
+}
+
+.dishNameCardWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dishNameCard{
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0;
+}
+
+.bucketImage{
+    height: 22px;
+    width: 22px;
+}
+
+.emptyHistoryWrapper{
+    text-align: center;
+    height: 360px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.emptyOrderText{
+    width: 260px;
+}
+
+.emptyOrderTitle{
+    color: #7C7D88;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.emptyOrderMessage{
+    color: #7C7D88;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.buyButtoSmall{
+    width: 70%;
+    height: 48px;
+    background: #1F2026;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    overflow: none;
+    border: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+}
+
+.dishOrdersWrapper{
+    box-sizing: border-box;
+    overflow-y: scroll;
+    max-height: 360px;
+    padding-bottom: 16px;
+    width: calc(100% + 14px);
+    padding-right: 14px;
+}
+
+.dishNumber{
+    margin: 0;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: left;
+}
+
+.metricsWrapper, .metric{
+    display: flex;
+    align-items: center;
+}
+
+.metricName, .metricValue{
+    margin: 0;
+}
+
+.metricName{
+    font-weight: 400;
+    font-size: 14px;
+    color: #7C7D88;
+    margin-right: 8px;
+}
+
+.metricValue{
+    font-weight: 600;
+    font-size: 14px;
+    color: #484A54;
+    margin-right: 16px;
+}
+

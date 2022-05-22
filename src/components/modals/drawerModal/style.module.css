@@ -1,0 +1,72 @@
+.drawerModalWrapper{
+    width: 90vw;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    left: 10vw;
+    border-radius: 8px 0px 0px 8px;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: margin-left 0.5s;
+    z-index: 2;
+}
+
+.closeButtonWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.closeButton{
+    width: 25px;
+    height: 25px;
+
+}
+
+.menuWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 48px;
+}
+
+.menuItemWrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.bordered {
+    border-bottom: 2px solid #F1F1F1;
+}
+
+.menuItemImg{
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+
+.drawerModalContent{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.drawerModalFooterText{
+    font-weight: 400;
+    font-size: 14px;
+    color: #7C7D88;
+}
+
+.drawerModalFooter{
+    width: 100%;
+    text-align: start;
+    margin-bottom: 15px;
+}
+
+.closed{
+    margin-left: 100vw;
+    transition: margin-left 0.5s;
+}

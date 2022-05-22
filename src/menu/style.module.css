@@ -1,0 +1,391 @@
+@import "react-alice-carousel/lib/alice-carousel.css";
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 16px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.darkEffect{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.contentWrapper{
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.menuHeader {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    background-color: #F5F5F5;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 32px;
+    height: 32px;
+}
+
+.arrowDown{
+    width: 8px;
+    height: 4px;
+    margin-right: 20px;
+    transition: transform 0.3s;
+}
+
+.headerOptions{
+    display: flex;
+    align-items: center;
+}
+
+.optionWrapper{
+    display: flex;
+    align-items: center;
+}
+
+.headerOptionsText{
+    font-size: 16px;
+    color: #1F2026;
+    margin-right: 8px;
+}
+
+.sandwich{
+    width: 16px;
+    height: 11px;
+}
+
+.inputWrapper{
+    width: 100%;
+    height: 40px;
+    margin-top: 8px;
+    border-radius: 4px;
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    padding: 17px 13px;
+    box-sizing: border-box;
+}
+
+.loop{
+    width: 13px;
+    height: 13px;
+    margin-right: 10px;
+}
+
+.searchInput{
+    width: 100%;
+    height: 20px;
+    outline: none;
+    border: none;
+    background-color: #F5F5F5;
+    color: #7C7D88;
+}
+
+.dishTypeWrapper{
+    width: 68px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 100px;
+    margin-left: 16px;
+    color: #484A54;
+    flex-shrink: 0;
+}
+
+.dishType{
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.selected{
+    background-color: #1F2026;
+    color: #fff;
+}
+
+.filterWrapper{
+    width: 100%;
+    display: flex;
+    margin-top: 16px;
+    justify-content: flex-start;
+    height: 50px;
+    align-items: center;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.typesWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    height: 50px;
+    align-items: center;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+.typesWrapper::-webkit-scrollbar { 
+    display: none;
+}
+
+.filterButton{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.buttonSelected{
+    background-color: #000;
+}
+
+.filterIcon{
+    position: relative;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    right: 6px;
+}
+
+.blackCircle{
+    position: relative;
+    top: -15px;
+    right: -28px;
+    background-color: #1F2026;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+    flex-shrink: 0;
+}
+
+.dishes{
+    width: calc(100% + 14px);
+    text-align: start;
+    margin-top: 30px;
+}
+
+.dishesWrapper{
+    width: 100%;
+    height: calc(100vh - 330px);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    row-gap: 16px;
+    padding-right: 14px;
+}
+
+.dishesTitle{
+    font-weight: bold;
+    font-size: 18px;
+    color: #4F4F4F;
+}
+
+.dishWrapper{
+    width: 156px;
+    height: 270px;
+    background: #F8F8F8;
+    border-radius: 8px;
+}
+
+.dishImage{
+    width: 156px;
+    height: 120px;
+    border-radius: 8px;
+}
+
+.heartWrapper{
+    position: relative;
+    top: -31px;
+    right: -128px;
+    background: #FFFFFF;
+    opacity: 0.8;
+    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heart{
+    width: 16px;
+    height: 14.67px;
+}
+
+.dishDescriptionWrapper{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px 8px;
+    position: relative;
+    top: -25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.dishName{
+    font-weight: 600;
+    font-size: 14px;
+    color: #4F4F4F;
+    line-height: 22.4px;
+}
+
+.dishWeight{
+    font-weight: 400;
+    font-size: 12px;
+    color: #4F4F4F;
+    position: relative;
+    top: -5px;
+}
+
+.dishPrice{
+    outline: none;
+    background-color: #fff;
+    width: 140px;
+    height: 38px;
+    border-radius: 4px;
+    border: none;
+    color: #1F2026;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.buyButtonWrapper{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    padding: 0 16px;
+    box-sizing: border-box;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dishDescriptionText{
+    width: 100%;
+    align-items: flex-start;
+}
+
+.buyButton{
+    width: 100%;
+    height: 48px;
+    background: #1F2026;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    overflow: none;
+    border: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+}
+
+.bullets{
+    display: flex;
+    justify-content: space-between;
+    top: 16px;
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+.hidden{
+    display: none;
+}
+
+.rotated {
+    transition: transform 0.3s;
+    transform: rotate(180deg);
+}
+
+@media (prefers-color-scheme: dark) {
+    .menuHeader {
+        background-color: #323338;
+    }
+    .headerOptionsText{
+        color: #F5F5F5;
+    }
+    .inputWrapper{
+        background-color: #323338;
+    }
+    .searchInput{
+        background-color: #323338;
+        color: #F5F5F5
+    }
+    .filterButton{
+        background-color: #323338;
+    }
+    .dishTypeWrapper{
+        background-color: #323338;
+        color: #fff;
+    }
+    .selected{
+        background-color: #F5F5F5;
+        color: #484A54
+    }
+    .dishWrapper{
+        width: 156px;
+        height: 270px;
+        background: #323338;
+        border-radius: 8px;
+    }
+    .dishName{
+        color: #F5F5F5;
+    }
+    
+    .dishWeight{
+        color: #F5F5F5;
+    }
+    .dishPrice{
+        background-color: #484A54;
+        color: #F5F5F5;
+    }
+    .dishesTitle{
+        color: #F5F5F5;
+    }
+    .buyButtonWrapper{
+        background-color: #484A54;
+    }
+    .buttonSelected{
+        background-color: #F5F5F5;
+    }
+    .blackCircle{
+        background-color: #F5F5F5;
+        border: 2px solid #484A54;
+    }
+}

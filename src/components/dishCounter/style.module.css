@@ -1,0 +1,32 @@
+.dishCountSelector{
+    width: 80px;
+    height: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dishCountDevider{
+    height: 24px;
+    width: 24px;
+}
+
+.dishCount{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.dishCountDevider{
+    height: 24px;
+    width: 24px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .dishCount{
+        color: #fff
+    }
+}
+
+.black{
+    color: #000;
+}
